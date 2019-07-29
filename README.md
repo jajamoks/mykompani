@@ -1,6 +1,6 @@
 # mykompani
 
-> A Vue.js project
+>wait for repo description
 
 ## Build Setup
 
