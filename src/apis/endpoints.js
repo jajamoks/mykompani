@@ -1,5 +1,7 @@
 const resource =  {
-    baseUrl: 'http://localhost:3000/api/v1.0/',
+    // baseUrl: 'http://localhost:3000/api/v1.0/',
+    baseUrl: 'https://mykompani-api.herokuapp.com/api/v1.0/',
+    
     // user
     login: 'user/login/',
     addEmployee: 'user/employee_sign_up/',
