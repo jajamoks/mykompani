@@ -312,7 +312,6 @@
 
     },
     computed: {
-
       ...mapState({
         token: state => state.token,
         employee: state => state.employee.employee,
