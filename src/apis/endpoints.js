@@ -1,6 +1,6 @@
 const resource =  {
-    // baseUrl: 'http://localhost:3000/api/v1.0/',
-    baseUrl: 'https://mykompani-api.herokuapp.com/api/v1.0/',
+    baseUrl: 'http://localhost:3000/api/v1.0/',
+    // baseUrl: 'https://mykompani-api.herokuapp.com/api/v1.0/',
     
     // user
     login: 'user/login/',
@@ -18,6 +18,7 @@ const resource =  {
     payrolls:'payroll/organization_payroll/',
 
     // paidSalary
+    addPaidSalary: "payroll/add_paid_salary/",
     orgainzationPaidSalaries: "payroll/organization_paid_salaries/",
 
   }

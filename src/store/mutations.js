@@ -31,6 +31,9 @@ const mutations = {
   setPaidSalaries(state, data) {
     state.paidSalaries = data
   },
+  setComfirmPaidSalary(state, data) {
+    state.comfirmPaidSalary = data
+  },
 
 
 

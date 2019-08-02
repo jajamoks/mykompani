@@ -16,7 +16,8 @@ const createStore = () => {
         employee: {},
         employeeEducation: [],
         payrolls: [],
-        paidSalaries: []
+        paidSalaries: [],
+        comfirmPaidSalary: {}
     },
     mutations: mutations,
     actions: actions,

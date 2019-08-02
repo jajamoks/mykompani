@@ -34,7 +34,7 @@
                     <span style="color: black;" v-else-if="payroll.employee.type == 'Internship'">{{payroll.employee.type}}</span>
                   </td>
                   <td class=" center">
-                    <a  class="btn btn-tbl-edit">
+                    <a  @click="callPaidSalaryModel(payroll)" class="btn btn-tbl-edit">
                       <i class="material-icons">credit_card</i>
                     </a>
                   </td>
@@ -43,6 +43,7 @@
             </table>
           </div>
         </div>
+        <comfirm-salary-payment></comfirm-salary-payment>
       </div>
     </div>
   </div>
@@ -52,10 +53,22 @@
   import {mapState} from "vuex";
   import axios from 'axios'
   import endpoints from '../../apis/endpoints'
+  import ComfirmSalaryPayment from '../../modals/comfirm_salary_payment'
 
   export default {
-    data: () => ({}),
-    methods: {},
+    components: {
+      ComfirmSalaryPayment
+    },
+    data: () => ({
+    }),
+    methods: {
+
+       async callPaidSalaryModel(payroll) {
+         this.$store.commit("setComfirmPaidSalary", payroll)
+          $('#paidSalaryModal').modal('show');
+      },
+
+    },
 
     async mounted() {
       console.log('lop')
