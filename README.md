@@ -1,6 +1,6 @@
 # mykompani
 
->wait for repo description
+>HR like system that manages a company from employees, payroll, products etc..  Code in JavaScript ( Vue.js )
 
 ## Build Setup
 
